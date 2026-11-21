@@ -201,7 +201,9 @@ h3 { font-size: 1.22rem; letter-spacing: -.012em; }
 .catalogue-group h2 { margin-bottom: .5rem; }
 .detail-grid { display: grid; grid-template-columns: minmax(0, 2fr) minmax(0, 1fr); gap: clamp(1.5rem, 5vw, 4rem); align-items: start; }
 .detail-grid p { max-width: 43rem; }
-.detail-grid h2:not(:first-child) { margin-top: 1.75rem; }
+.service-copy section + section { margin-top: 2rem; }
+.service-copy ul { padding-inline-start: 1.4rem; }
+.service-copy li + li { margin-top: .35rem; }
 .aside, .contact-panel { padding: clamp(1.2rem, 3vw, 1.9rem); border-radius: var(--radius); }
 .aside h2 { font-size: 1.38rem; }
 .aside li + li { margin-top: .65rem; }
