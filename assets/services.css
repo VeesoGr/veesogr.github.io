@@ -1,0 +1,151 @@
+.page-ypiresies {
+  --services-gutter: clamp(1rem, 3.5vw, 2.5rem);
+  --services-gap: clamp(.8rem, 2vw, 1.25rem);
+}
+
+.page-ypiresies .page-hero {
+  align-items: start;
+  padding: clamp(2rem, 5vw, 3.6rem) var(--services-gutter);
+  text-align: left;
+}
+
+.page-ypiresies .page-hero-inner {
+  max-width: 1200px;
+}
+
+.page-ypiresies .page-hero h1 {
+  font-size: clamp(2.15rem, 4.5vw, 3.5rem);
+  line-height: 1.12;
+}
+
+.page-ypiresies .page-hero-inner > p {
+  margin: .4rem 0 0;
+}
+
+.page-ypiresies .breadcrumbs {
+  justify-content: start;
+  margin: .8rem 0 0;
+}
+
+.page-ypiresies .page-content {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: var(--services-gap);
+  width: min(calc(100% - 2 * var(--services-gutter)), 1200px);
+  margin-inline: auto;
+  padding: clamp(1.4rem, 3vw, 2.5rem) 0 clamp(2rem, 4vw, 3.5rem);
+}
+
+/* The archived rows are layout wrappers. Let the cards share one responsive grid. */
+.page-ypiresies .page-content > .vc-row:has(.mkdf-three-columns),
+.page-ypiresies .page-content > .vc-row:has(.mkdf-three-columns) :is(.vc-row-inner, .vc_column_container, .vc_column-inner, .wpb_wrapper, .mkdf-three-columns) {
+  display: contents;
+}
+
+.page-ypiresies .page-content > .vc-row:has(> .vc-row-inner > .vc_column_container:only-child > .vc_column-inner > .wpb_wrapper > .vc_empty_space:only-child) {
+  display: none;
+}
+
+.page-ypiresies .mkdf-eh-item {
+  min-width: 0;
+  padding: 0;
+  background: transparent;
+  box-shadow: none;
+}
+
+.page-ypiresies .mkdf-eh-item:has(.mkdf-section-title-holder) {
+  grid-column: 1 / -1;
+}
+
+.page-ypiresies .mkdf-eh-item:has(.mkdf-section-title-holder) .mkdf-eh-item-content {
+  padding: 0 !important;
+  background: transparent;
+}
+
+.page-ypiresies .mkdf-st-intro {
+  color: var(--color-accent);
+  font-size: .875rem;
+  font-weight: 650;
+  margin: 0 0 .25rem;
+}
+
+.page-ypiresies .mkdf-st-title {
+  margin: 0;
+  color: var(--color-dark);
+  font-size: clamp(1.5rem, 3vw, 2.15rem);
+  line-height: 1.2;
+  letter-spacing: -.02em;
+}
+
+.page-ypiresies .mkdf-eh-item:has(.mkdf-icon-with-text) .mkdf-eh-item-content {
+  justify-content: space-between;
+  gap: .8rem;
+  padding: clamp(.9rem, 2vw, 1.3rem) !important;
+  border: 1px solid var(--color-border);
+  border-radius: 14px;
+  background: #fff;
+}
+
+.page-ypiresies .mkdf-eh-item-content:focus-within {
+  border-color: var(--color-accent);
+}
+
+.page-ypiresies .mkdf-icon-with-text {
+  display: grid;
+  grid-template-columns: 2.4rem minmax(0, 1fr);
+  align-items: start;
+  gap: .75rem;
+  padding: 0;
+  border: 0;
+  background: transparent;
+  box-shadow: none;
+}
+
+.page-ypiresies .mkdf-iwt-icon img {
+  width: 2.4rem;
+  height: 2.4rem;
+  object-fit: contain;
+}
+
+.page-ypiresies .mkdf-iwt-content h4 {
+  margin: 0;
+  color: var(--color-dark);
+  font-size: 1.03rem;
+  line-height: 1.35;
+  overflow-wrap: anywhere;
+}
+
+.page-ypiresies .mkdf-iwt-content p {
+  margin: .4rem 0 0;
+  color: var(--color-muted);
+  font-size: .9rem;
+  line-height: 1.55;
+  overflow-wrap: anywhere;
+}
+
+.page-ypiresies .mkdf-eh-item-content > .mkdf-btn {
+  align-self: start;
+  min-height: 2.5rem;
+  margin: 0 0 0 3.15rem;
+  padding: .45rem .95rem;
+  background: #e9f4f2;
+  color: #075849;
+  font-size: .875rem;
+}
+
+.page-ypiresies .mkdf-eh-item-content > .mkdf-btn:hover {
+  background: #d3ebe6;
+  text-decoration: underline;
+}
+
+@media (max-width: 62rem) {
+  .page-ypiresies .page-content {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
+@media (max-width: 38rem) {
+  .page-ypiresies .page-content {
+    grid-template-columns: minmax(0, 1fr);
+  }
+}
