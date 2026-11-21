@@ -428,7 +428,7 @@ a:hover {
 }
 
 .mkdf-banner {
-  background: linear-gradient(135deg, #0d8460, #17a896);
+  background: linear-gradient(135deg, #075849, #086b62);
   color: #fff;
   padding: 2.5rem;
   border-radius: var(--radius);
@@ -888,14 +888,45 @@ a:hover {
   box-shadow: none;
 }
 
+.home-banner + .vc-row .mkdf-eh-item-content {
+  background: rgba(6, 25, 57, .92);
+  color: #fff;
+}
+
+.home-banner + .vc-row .mkdf-btn {
+  background: #fff;
+  border-color: #fff;
+  color: #061a47;
+}
+
+.home-banner + .vc-row .mkdf-btn:hover {
+  background: #dff3ef;
+}
+
+.page-main-home .row-skin-light .mkdf-eh-item-content h2 {
+  color: var(--color-dark);
+}
+
 .mkdf-iwt-content h4,
 .mkdf-banner h4 {
   margin: 0 0 .5rem;
   font-size: 1.15rem;
 }
 
+.mkdf-banner:has(.mkdf-banner-link) {
+  padding: 0;
+}
+
 .mkdf-banner-link {
   display: block;
+  padding: 1.4rem 1.65rem;
+  border-radius: inherit;
+  color: inherit;
+}
+
+.mkdf-banner-link:focus-visible {
+  outline-color: #fff;
+  outline-offset: -5px;
 }
 
 .mkdf-pt-inner {
