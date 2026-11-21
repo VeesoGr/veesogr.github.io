@@ -1,3 +1,19 @@
+@font-face {
+  font-family: "Veeso Inter";
+  src: url("fonts/InterVariable.woff2") format("woff2");
+  font-style: normal;
+  font-weight: 100 900;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Veeso Inter";
+  src: url("fonts/InterVariable-Italic.woff2") format("woff2");
+  font-style: italic;
+  font-weight: 100 900;
+  font-display: swap;
+}
+
 :root {
   --color-dark: #001659;
   --color-accent: #15736b;
@@ -5,7 +21,7 @@
   --color-light: #f4f6fb;
   --color-border: #e1e4ec;
   --radius: 18px;
-  font-family: "Inter", "Segoe UI", system-ui, -apple-system, BlinkMacSystemFont, sans-serif;
+  font-family: "Veeso Inter", system-ui, -apple-system, "Segoe UI", sans-serif;
 }
 
 *,
@@ -16,7 +32,6 @@
 
 body {
   margin: 0;
-  font-family: var(--font-family, "Inter", "Segoe UI", sans-serif);
   line-height: 1.7;
   color: #1f2537;
   background: #fff;
