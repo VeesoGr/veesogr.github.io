@@ -148,6 +148,7 @@ h3 { font-size: 1.22rem; letter-spacing: -.012em; }
 }
 .section-head h2 { margin: 0; }
 .cards, .contact-grid { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 1.15rem; }
+.home-offers .cards { grid-template-columns: repeat(2, minmax(0, 1fr)); }
 .card {
   min-width: 0;
   padding: 1.4rem;
@@ -226,6 +227,9 @@ address { font-style: normal; margin-bottom: .5rem; }
 .footer-brand img { width: 158px; }
 .site-footer :focus-visible { outline-color: #fff; }
 
+@media (min-width: 65rem) {
+  .home-offers .cards { grid-template-columns: repeat(4, minmax(0, 1fr)); }
+}
 @media (max-width: 51rem) {
   .header-phone { display: none; }
   .cards { grid-template-columns: repeat(2, minmax(0, 1fr)); }
@@ -244,7 +248,7 @@ address { font-style: normal; margin-bottom: .5rem; }
   .photo-surface::before {
     background: linear-gradient(90deg, rgb(5 15 50 / 93%), rgb(7 23 68 / 66%));
   }
-  .split, .cards, .detail-grid, .contact-grid { grid-template-columns: 1fr; }
+  .split, .cards, .home-offers .cards, .detail-grid, .contact-grid { grid-template-columns: 1fr; }
   .split-photo { max-height: 15rem; }
   .photo-heading { min-height: 15rem; }
   .page-body { padding-top: 1.1rem; }
